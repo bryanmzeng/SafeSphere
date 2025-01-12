@@ -1,0 +1,62 @@
+:root {
+  --oxide-black: #000;
+  --oxide-green: #00ff00;
+  --oxide-white: #ffffff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--oxide-black);
+  color: var(--oxide-green);
+  font-family: 'Monaco', monospace;
+}
+
+.oxide-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-page {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.oxide-container {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 2px solid var(--oxide-green);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.oxide-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.select-container {
+  margin-bottom: 20px;
+}
+
+.oxide-button {
+  background-color: var(--oxide-green);
+  color: var(--oxide-black);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.oxide-button:hover {
+  background-color: var(--oxide-white);
+}
+
+.oxide-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
